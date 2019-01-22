@@ -32,7 +32,7 @@ Add the tuples with the same key (word)
 Stripping the words which have leading or trailing punctuations  
 
 
-# Subproject D:
+## Subproject D:
 
 * Up until now, you have been computing what is known as term frequency: word counts are measures of frequency of the words (terms). What is more informative is term frequency inverse document frequency, or TF-IDF. This weights the term frequency by the inverse number of documents the word appears in.  
 * The IDF term looks like this: $log(N / n_t) $, where $N$ is the number of documents (in this case, 8 books), and $n_t$ is the number of documents the specific word $t$ appears in (therefore, this should be between 1 and 8, inclusive).  
