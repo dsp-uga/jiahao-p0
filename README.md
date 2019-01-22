@@ -33,8 +33,6 @@ Stripping the words which have leading or trailing punctuations
 
 
 ## Subproject D:
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 
 * Up until now, you have been computing what is known as term frequency: word counts are measures of frequency of the words (terms). What is more informative is term frequency inverse document frequency, or TF-IDF. This weights the term frequency by the inverse number of documents the word appears in.  
 * The IDF term looks like this: <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\log(N/n_t)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\inline&space;\log(N/n_t)" title="\log(N/n_t)" /></a>, where <a href="https://www.codecogs.com/eqnedit.php?latex=N" target="_blank"><img src="https://latex.codecogs.com/gif.latex?N" title="N" /></a> is the number of documents (in this case, 8 books), and <a href="https://www.codecogs.com/eqnedit.php?latex=n_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?n_t" title="n_t" /></a> is the number of documents the specific word <a href="https://www.codecogs.com/eqnedit.php?latex=n_t" target="_blank"><img src="https://latex.codecogs.com/gif.latex?t" title="t" /></a> appears in (therefore, this should be between 1 and 8, inclusive).  
