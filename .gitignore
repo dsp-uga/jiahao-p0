@@ -39,3 +39,7 @@ Thumbs.db
 # Jupyter Notebook checkpoints files #
 ######################
 .ipynb_checkpoints/
+
+# Backup files #
+######################
+*_bk*
