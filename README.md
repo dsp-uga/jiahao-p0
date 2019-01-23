@@ -47,10 +47,10 @@ where <a href="https://www.codecogs.com/eqnedit.php?latex=n_j&space;=&space;0,&s
 * It is intuitive to create a 2-dimensional array, <a href="https://www.codecogs.com/eqnedit.php?latex=A" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A" title="A" /></a>, to store the frequency for each word in each specific document, where  
 <a href="https://www.codecogs.com/eqnedit.php?latex=A[i][j]&space;=&space;\text{&space;frequency&space;(times&space;of&space;occurrence)&space;for&space;word,&space;}&space;w_i&space;\text{,&space;in&space;document&space;}&space;j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A[i][j]&space;=&space;\text{&space;frequency&space;(times&space;of&space;occurrence)&space;for&space;word,&space;}&space;w_i&space;\text{,&space;in&space;document&space;}&space;j" title="A[i][j] = \text{ frequency (times of occurrence) for word, } w_i \text{, in document } j" /></a>
 
-Handle each document one by one  
-Take the first doument for example . 
-Split each line into a list of words  
-Filter out the words which are in the stopwords list  
-Map each word, w, to a tuple, (w, [1, 0, 0, ... 0]). For the second document, the tuple would be (w, [0, 1, 0, ... 0]). etc    
-Add the tuples with the same key (word)  
-Stripping the words which have leading or trailing punctuations  
+* Read all text through wholeTextFiles() method, which will return a key-value pair, where the key is the path of each file, the value is the content of each file  
+* Create a map, where the key is the path of the file, and the value is the index, i.e. 0, 1, ... 7
+* Split each line into a list of words, and map each word, w, to a tuple, (w, [1, 0, 0, ... 0]). For the second document, the tuple would be (w, [0, 1, 0, ... 0]). etc  
+* Stripping the words which have leading or trailing punctuations
+* Filter out the words which are in the stopwords list  
+* Add the tuples with the same key (word) by using reduceByKey    
+
